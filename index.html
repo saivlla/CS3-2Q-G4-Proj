@@ -16,17 +16,31 @@
             background-color: #003366; /* Darker blue */
             color: white;
             padding: 10px;
-            text-align: center;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo {
+            margin-right: 15px; /* Space between logo and title */
+        }
+
+        .logo img {
+            height: 50px; /* Adjust logo size */
         }
 
         h1 {
             margin: 0;
+            flex-grow: 1; /* Allows the title to take available space */
         }
 
         nav a {
             margin: 0 15px;
             color: white;
             text-decoration: none;
+        }
+
+        nav a:hover {
+            text-decoration: underline; /* Underline effect on hover */
         }
 
         section {
@@ -48,6 +62,9 @@
 
     <!-- Header -->
     <header>
+        <div class="logo">
+            <img src="logo.png" alt="Company Logo">
+        </div>
         <h1>WaterWise Solutions</h1>
         <nav>
             <a href="#about">About Us</a>
@@ -70,6 +87,12 @@
             <li>Leak Detection</li>
             <li>Wastewater Treatment</li>
         </ul>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>If you have any questions, feel free to reach out at <a href="mailto:info@waterwise.com">info@waterwise.com</a>.</p>
     </section>
 
     <!-- Footer -->
