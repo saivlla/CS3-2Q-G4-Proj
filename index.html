@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html>
 <head>
     <meta charset="UTF-8">
@@ -17,6 +17,7 @@
             color: white;
             padding: 10px;
             display: flex;
+			width:
             align-items: center;
         }
 
@@ -52,7 +53,7 @@
         .banner {
             position: relative;
             width: 100%;
-            height: 400px; 
+            height: 700px; 
             background-image: url('cover.jpg'); 
             background-size: cover;
             background-position: center;
@@ -113,6 +114,11 @@
         .youtube-info a:hover {
              text-decoration: underline;
           }
+		  
+		.article-content a:hover {
+            color: white;
+            text-decoration: underline; 
+        }
         
         footer {
             background-color: #003366; 
@@ -186,19 +192,65 @@
         
     <!-- Youtube-->
     <div class="video-section">
-  <h3>Watch this short video:</h3>
-  <div class="video-card">
-    <iframe src="https://www.youtube.com/embed/A3rLfrIUzY4" frameborder="0" allowfullscreen>
-    </iframe>
-  </div>
-    <p class="youtube-info">
-      How to keep water clean.
-      <a href="https://www.youtube.com/watch?v=A3rLfrIUzY4" >Cleaning waters. A simple guide on how to preserve water.</a>
-    </p>
-  </div>
-</div>
+		<h3>Watch this short video:</h3>
+	<div class="video-card">
+		<iframe src="https://www.youtube.com/embed/A3rLfrIUzY4" frameborder="0" allowfullscreen>
+	</iframe>
+	</div>
+		<p class="youtube-info">
+		How to keep water clean.
+		<a href="https://www.youtube.com/watch?v=A3rLfrIUzY4" >Cleaning waters. A simple guide on how to preserve water.</a>
+	</p>
+	</div>
+	</div>
 
+	<!-- Article preview list -->
+	<h2>Articles To Preview:</h2>
+	<div class="article-list">
+	<div class="article-preview" data-article-id="1">
+		<h2>Causes of Water Pollution</h2>
+		<img src="article1-image.jpg" alt="Article 1 Image">
+	</div>
+	<!-- Article Content -->
+	<div class="article-content" data-article-id="1">
+		<p><a href="file:///C:/Users/Huawei/Documents/Ella%20Files/G9-Potassium-Ea/Article%201.html" >Article 1</a>
+		</p>
+	 </div>
 
+	<div class="article-preview" data-article-id="2">
+		<h2>Effects of Water Pollution</h2>
+		<img src="article2-image.jpg" alt="Article 2 Image">
+	</div>
+	
+	<!-- Article Content -->
+	<div class="article-content" data-article-id="2">
+		<p><a href="file:///C:/Users/Huawei/Documents/Ella%20Files/G9-Potassium-Ea/Article%202.html" >Article 2</a>
+		</p>
+	 </div>
+	 
+	<!-- Add more article previews here -->
+	<div class "article-preview" data-article-id="3">
+		<h2>How to Avoid Water Pollution</h2>
+		<img src="image.jpg" alt="Article 3 Image">
+	</div>
+	
+	<!-- Article Content -->
+	<div class="article-content" data-article-id="1">
+		<p><a href="https://www.youtube.com/watch?v=A3rLfrIUzY4" >Article 3</a>
+		</p>
+	</div>
+	 
+	<div class "article-preview" data-article-id="4">
+		<h2>How to Solve Water Pollution</h2>
+		<img src="image.jpg" alt="Article 4 Image">
+	</div>
+
+	<!-- Article Content -->
+	<div class="article-content" data-article-id="1">
+		<p><a href="https://www.youtube.com/watch?v=A3rLfrIUzY4" >Article 4</a>
+		</p>
+	 </div>
+	
     <!-- About -->
     <section id="about">
         <h2>About Us</h2>
