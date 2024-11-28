@@ -138,24 +138,57 @@
             text-decoration: underline;
         }
 
-	.article-list {
-    display: flex;
-    flex-direction: column; /* Stack the rows vertically */
-    gap: 20px; /* Add space between the rows */
+	
+.pictures img,
+.article-preview img {
+    width: 100%;
+    height: auto; 
+    max-width: 100%;
+    border-radius: 8px;
+    object-fit: cover; 
 }
 
-.article-row {
-    display: flex;
-    justify-content: space-between; /* Space the articles equally */
-    gap: 20px; /* Space between articles */
-}
 
 .article-preview {
-    width: 48%; /* Adjust the width to make two articles fit in one row */
+    width: 48%; 
     border-radius: 8px; 
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 20px; 
 }
-	 
+
+
+.article-preview h2 {
+    margin: 10px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+
+.article-preview a {
+    display: block;
+    text-decoration: none; 
+}
+
+
+.article-preview a:hover img {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+
+
+.article-preview:hover {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15); 
+    cursor: pointer; 
+}
+
+
+.article-preview:hover h2 {
+    color: #0066cc; 
+}	 
     </style>
 </head>
 <body>
@@ -221,36 +254,44 @@
             <a href="https://www.youtube.com/watch?v=A3rLfrIUzY4">Cleaning waters. A simple guide on how to preserve water.</a>
         </p>
     </div>
-        
-        <!-- Article preview list -->
+    <!-- Article preview list -->
 <h2>Articles To Preview:</h2>
 <div class="article-list">
     <div class="article-row">
-        <!--Article 1-->
+        <!-- First Article -->
         <div class="article-preview" data-article-id="1">
+            <a href="Article 1.html">
+                <img src="hey.jpg" alt="Article 1 Image">
+            </a>
             <h2>Causes of Water Pollution</h2>
-            <img src="hey.jpg" alt="Article 1 Image">
         </div>
-        <!--Article 2 -->
+        <!-- Second Article -->
         <div class="article-preview" data-article-id="2">
+            <a href="Article 2.html">
+                <img src="what.jpg" alt="Article 2 Image">
+            </a>
             <h2>Effects of Water Pollution</h2>
-            <img src="what.jpg" alt="Article 2 Image">
         </div>
     </div>
-    
+
     <div class="article-row">
-        <!--Article 3 -->
+        <!-- Third Article -->
         <div class="article-preview" data-article-id="3">
+            <a href="Article 3.html">
+                <img src="oh.jpg" alt="Article 3 Image">
+            </a>
             <h2>How to Avoid Water Pollution</h2>
-            <img src="oh.jpg" alt="Article 3 Image">
         </div>
-        <!--Article 4 -->
+        <!-- Fourth Article -->
         <div class="article-preview" data-article-id="4">
+            <a href="Article 4.html">
+                <img src="bro.jpg" alt="Article 4 Image">
+            </a>
             <h2>How to Solve Water Pollution</h2>
-            <img src="bro.jpg" alt="Article 4 Image">
         </div>
     </div>
 </div>
+        
     <!-- About -->
     <section id="about">
         <h2>About Us</h2>
