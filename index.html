@@ -20,12 +20,9 @@
             align-items: center;
         }
 
-        .logo {
-            margin-right: 15px;
-        }
-
         .logo img {
             height: 50px;
+            margin-right: 15px;
         }
 
         h1 {
@@ -44,12 +41,7 @@
             text-decoration: underline;
         }
 
-        a:hover {
-            color: #c1e1ec;
-        }
-
         .banner {
-            position: relative;
             width: 100%;
             height: 700px;
             background-image: url('cover.jpg');
@@ -62,7 +54,6 @@
         }
 
         .banner-text {
-            position: absolute;
             text-align: center;
             font-size: 2.5em;
             background-color: rgba(0, 0, 0, 0.5);
@@ -74,45 +65,327 @@
             margin: 20px 0;
         }
 
-        .video-articles-container {
+        .pictures {
             display: flex;
-            justify-content: center;
-            align-items: flex-start;
-            gap: 20px;
-            margin-top: 20px;
+            justify-content: space-between;
+            gap: 1px;
         }
 
-        .articles-left, .articles-right {
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
+        .pictures img {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            border-radius: 8px;
         }
 
-        .video-card {
-            flex: 2;
+        .video-section {
             text-align: center;
+            margin: 20px 0;
         }
 
         .video-card iframe {
             width: 100%;
-            max-width: 600px;
-            height: 350px;
+            max-width: 800px;
+            height: 450px;
             border: none;
         }
 
+        .youtube-info {
+            font-size: 14px;
+            margin-top: 10px;
+        }
+
+        .youtube-info a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+
+        .youtube-info a:hover {
+            text-decoration: underline;
+        }
+
+        .article-list {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            margin: 20px 0;
+        }
+
         .article-preview {
-            width: 100%;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
-            background: #fff;
+            width: 45%;
             text-align: center;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            overflow: hidden;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
 
         .article-preview img {
             width: 100%;
             height: auto;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .article-preview:hover img {
+            transform: scale(1.05);
+        }
+
+        .article-preview h2 {
+            margin: 10px;
+            font-size: 16px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        footer {
+            background-color: #003366;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <img src="logonamin.jpg" alt="Website Logo">
+    </div>
+    <h1>Water Waste Management</h1>
+    <nav>
+        <a href="#about">About Us</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<div class="banner">
+    <div class="banner-text">
+        <h2>Preserve Our Water, Protect Our Future</h2>
+    </div>
+</div>
+
+<section id="details">
+    <h2>Why clean the oceans?</h2>
+    <p>Maintaining sustainability and improving the standard of living for individuals who live close to our bodies of water depend on their protection and preservation.</p>
+</section>
+
+<section id="video-section">
+    <h3>Watch this short video:</h3>
+    <div class="video-card">
+        <iframe src="https://www.youtube.com/embed/A3rLfrIUzY4" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <p class="youtube-info">
+        How to keep water clean.
+        <a href="https://www.youtube.com/watch?v=A3rLfrIUzY4">Cleaning waters. A simple guide on how to preserve water.</a>
+    </p>
+</section>
+
+<h2>Articles To Preview:</h2>
+<div class="article-list">
+    <div class="article-preview">
+        <a href="Article1.html">
+            <img src="article1.jpg" alt="Article 1">
+        </a>
+        <h2>Causes of Water Pollution</h2>
+    </div>
+    <div class="article-preview">
+        <a href="Article2.html">
+            <img src="article2.jpg" alt="Article 2">
+        </a>
+        <h2>Effects of Water Pollution</h2>
+    </div>
+    <div class="article-preview">
+        <a href="Article3.html">
+            <img src="article3.jpg" alt="Article 3">
+        </a>
+        <h2>How to Avoid Water Pollution</h2>
+    </div>
+    <div class="article-preview">
+        <a href="Article4.html">
+            <img src="article4.jpg" alt="Article 4">
+        </a>
+        <h2>How to Solve Water Pollution</h2>
+    </div>
+</div>
+
+<section id="about">
+    <h2>About Us</h2>
+    <p>Our team provides efficient and effective solutions for managing waste in bodies of water.</p>
+</section>
+
+<footer>
+    <p>Copyright © Managing Water Waste. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Managing Water Waste</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #99cfe0; 
+        }
+        
+        header {
+            background-color: #003366; 
+            color: white;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo {
+            margin-right: 15px; 
+        }
+
+        .logo img {
+            height: 50px; 
+        }
+
+        h1 {
+            margin: 0; 
+            flex-grow: 1; 
+        }
+
+        nav a {
+            margin: 0 15px;
+            color: white;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            color: #c1e1ec;
+            text-decoration: underline; 
+        }
+
+        a:hover {
+            color: #c1e1ec;
+        }
+
+        .banner {
+            position: relative;
+            width: 100%;
+            height: 700px; 
+            background-image: url('cover.jpg'); 
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            max-width: 100%;
+            height: auto;
+        }
+
+        .banner-text {
+            position: absolute;
+            text-align: center;
+            font-size: 2.5em;
+            background-color: rgba(0, 0, 0, 0.5); 
+            padding: 10px 20px;
+            border-radius: 8px;
+        }
+
+        section {
+            margin: 20px 0;
+        }
+
+        .pictures {
+            display: flex;
+            justify-content: space-between;
+            gap: 1px;
+        }
+
+        .pictures img {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            border-radius: 8px; 
+        }
+
+       .video-section {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+       .video-card iframe {
+            width: 100%;
+            max-width: 800px; 
+            height: 450px;
+            border: none;
+        }
+
+        .youtube-info {
+            font-size: 14px;
+            margin-top: 10px;
+        }
+
+        .youtube-info a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+
+        .youtube-info a:hover {
+            text-decoration: underline;
+        }
+		  
+		.article-content a:hover {
+            color: white;
+            text-decoration: underline; 
+        }
+        
+        footer {
+            background-color: #003366; 
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0; 
+            width: 100%;
+        }
+	.article-nav a {
+            margin: 0 15px;
+            color: white;
+            text-decoration: none;
+        }
+
+        .article-nav a:hover {
+            color: #c1e1ec;
+            text-decoration: underline;
+        }
+
+	    .article-list {
+            display: flex; 
+            justify-content: center; 
+            align-items: flex-start; 
+            flex-wrap: wrap; 
+            gap: 20px; 
+            padding: 20px;
+            background-color: #b3e6ff; 
+        }
+
+        .article-preview {
+            width: 250px; 
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            position: relative;
+            background: #fff; 
+            text-align: center; 
+        }
+
+        .article-preview img {
+            width: 100%; 
+            height: auto; 
         }
 
         .article-preview h2 {
@@ -127,58 +400,98 @@
             color: inherit;
         }
 
-        footer {
-            background-color: #003366;
-            color: white;
-            text-align: center;
-            padding: 10px;
-            position: relative;
-            bottom: 0;
-            width: 100%;
+        .article-preview:hover {
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); 
+            cursor: pointer;
+        }
+
+        .article-preview a:hover img {
+            transform: scale(1.05); 
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .article-preview:hover h2 {
+            color: #0066cc; 
         }
     </style>
 </head>
 <body>
 
-<header>
-    <div class="logo">
-        <img src="logonamin.jpg" alt="Website Logo">
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <img src="logonamin.jpg" alt="Website Logo">
+        </div>
+        <h1>Water Waste Management</h1>
+        <h2>"Sustainable Water, Sustainable Life"</h2>
+        <nav>
+            <a href="#about">About Us</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+            <a href="Article 1.html">What?</a>
+            <a href="Article 2.html">Learn More</a>
+        </nav>
+    </header>
+
+    <!-- Banner -->
+    <div class="banner">
+        <div class="banner-text">
+            <h2>Preserve Our Water, Protect Our Future</h2>
+        </div> 
     </div>
-    <h1>Water Waste Management</h1>
-    <h2>"Sustainable Water, Sustainable Life"</h2>
-    <nav>
-        <a href="#about">About Us</a>
-        <a href="#services">Services</a>
-        <a href="#contact">Contact</a>
-        <a href="Article 1.html">What?</a>
-        <a href="Article 2.html">Learn More</a>
-    </nav>
-</header>
+    
+    <!-- Information -->
+    <section id="information">
+        <h2>Addressing Issues on Water Pollution</h2>
+        <p>Ensuring a sustainable water future requires a comprehensive approach to water management. 
+            Beyond simply cutting back on water use, we need to actively educate the public about the increasing scarcity of freshwater resources and equip them with practical conservation methods. 
+            Financial incentives, like rebates and subsidies, can encourage people to adopt water-saving technologies in homes and businesses.
+            Crucially, implementing strategies like capturing rainwater, reusing water in industrial processes, and strengthening wastewater treatment systems will be vital in minimizing pollution and making the most of our existing water resources.
+            By working together to raise awareness, provide support, and implement concrete solutions, we can reshape our relationship with water and safeguard its quality and abundance for future generations.
+        </p>
+    </section> 
 
-<div class="banner">
-    <div class="banner-text">
-        <h2>Preserve Our Water, Protect Our Future</h2>
+    <!-- Pictures -->
+    <section id="pictures">
+        <h2>Effects of Water Pollution</h2>
+        <div class="pictures">
+            <img src="ew1.jpg" alt="Image 1">
+            <img src="ew2.jpg" alt="Image 2">
+            <img src="ew3.jpg" alt="Image 3">
+            <img src="ew4.jpg" alt="Image 4">
+        </div>
+    </section>
+
+    <!-- Details -->
+    <section id="details">
+        <h2>Why clean the oceans?</h2>
+        <p>Maintaining sustainability and improving the standard of living for individuals who live close to our bodies of water depend on their protection and preservation. We can stop more pollution, protect aquatic habitats, and advance the health and welfare of nearby populations by putting strict regulations and efficient waste management plans into place. Clean water is an essential resource that needs constant care and protection since it not only sustains biodiversity but also improves the general environment and public health.</p>
+        
+    <!-- Youtube-->
+    <div class="video-section">
+        <h3>Watch this short video:</h3>
+        <div class="video-card">
+            <iframe src="https://www.youtube.com/embed/A3rLfrIUzY4" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <p class="youtube-info">
+            How to keep water clean.
+            <a href="https://www.youtube.com/watch?v=A3rLfrIUzY4">Cleaning waters. A simple guide on how to preserve water.</a>
+        </p>
     </div>
-</div>
 
-<section id="information">
-    <h2>Addressing Issues on Water Pollution</h2>
-    <p>Ensuring a sustainable water future requires a comprehensive approach to water management. Beyond simply cutting back on water use, we need to actively educate the public about the increasing scarcity of freshwater resources and equip them with practical conservation methods. Financial incentives, like rebates and subsidies, can encourage people to adopt water-saving technologies in homes and businesses. Crucially, implementing strategies like capturing rainwater, reusing water in industrial processes, and strengthening wastewater treatment systems will be vital in minimizing pollution and making the most of our existing water resources. By working together to raise awareness, provide support, and implement concrete solutions, we can reshape our relationship with water and safeguard its quality and abundance for future generations.</p>
-</section>
-
-<section id="details">
-    <h2>Why clean the oceans?</h2>
-    <p>Maintaining sustainability and improving the standard of living for individuals who live close to our bodies of water depend on their protection and preservation. We can stop more pollution, protect aquatic habitats, and advance the health and welfare of nearby populations by putting strict regulations and efficient waste management plans into place. Clean water is an essential resource that needs constant care and protection since it not only sustains biodiversity but also improves the general environment and public health.</p>
-
-    <div class="video-articles-container">
-        <div class="articles-left">
-            <div class="article-preview">
+    <!-- Article preview list -->
+    <h2>Articles To Preview:</h2>
+    <div class="article-list">
+        <div class="article-row">
+            <!-- First Article -->
+            <div class="article-preview" data-article-id="1">
                 <a href="Article 1.html">
                     <img src="hey.jpg" alt="Article 1 Image">
                 </a>
                 <h2>Causes of Water Pollution</h2>
             </div>
-            <div class="article-preview">
+            <!-- Second Article -->
+            <div class="article-preview" data-article-id="2">
                 <a href="Article 2.html">
                     <img src="what.jpg" alt="Article 2 Image">
                 </a>
@@ -186,35 +499,28 @@
             </div>
         </div>
 
-        <div class="video-card">
-            <iframe src="https://www.youtube.com/embed/A3rLfrIUzY4" frameborder="0" allowfullscreen></iframe>
-            <p class="youtube-info">
-                How to keep water clean.
-                <a href="https://www.youtube.com/watch?v=A3rLfrIUzY4">Cleaning waters. A simple guide on how to preserve water.</a>
-            </p>
-        </div>
-
-        <div class="articles-right">
-            <div class="article-preview">
+        <div class="article-row">
+            <!-- Third Article -->
+            <div class="article-preview" data-article-id="3">
                 <a href="Article 3.html">
                     <img src="oh.jpg" alt="Article 3 Image">
                 </a>
                 <h2>How to Avoid Water Pollution</h2>
             </div>
-            <div class="article-preview">
+            <!-- Fourth Article -->
+            <div class="article-preview" data-article-id="4">
                 <a href="Article 4.html">
                     <img src="bro.jpg" alt="Article 4 Image">
                 </a>
-                <h2>How to Solve Water Pollution</h2>
+                <h2>Save Water. Save Life.</h2>
             </div>
         </div>
     </div>
-</section>
-
-<footer>
-    <p>Copyright © Managing Water Waste. All rights reserved.</p>
-</footer>
-
+    
+    <footer>
+        <p>&copy; 2024 Water Waste Management. All rights reserved.</p>
+    </footer>
 </body>
 </html>
+
 
