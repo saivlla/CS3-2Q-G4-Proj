@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=1920px">
     <title>Managing Water Waste</title>
     <style>
         body {
@@ -59,8 +59,6 @@
             align-items: center;
             justify-content: center;
             color: white;
-            max-width: 100%;
-            height: auto;
         }
 
         .banner-text {
@@ -141,55 +139,60 @@
         }
 
 	    .article-list {
-            display: flex; 
-            justify-content: center; 
-            align-items: flex-start; 
-            flex-wrap: wrap; 
-            gap: 20px; 
-            padding: 20px;
-            background-color: #b3e6ff; 
-        }
+    display: flex; /* Arrange items in a row */
+    justify-content: center; /* Center items horizontally */
+    align-items: flex-start; /* Align items at the top */
+    flex-wrap: wrap; /* Wrap items to the next row if necessary */
+    gap: 20px; /* Space between items */
+    padding: 20px;
+    background-color: #b3e6ff; /* Match the background color */
+}
 
-        .article-preview {
-            width: 250px; 
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
-            position: relative;
-            background: #fff; 
-            text-align: center; 
-        }
+.article-preview {
+    width: 250px; /* Set a fixed width for consistency */
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+    background: #fff; /* White background for the card */
+    text-align: center; /* Center text inside the card */
+}
 
-        .article-preview img {
-            width: 100%; 
-            height: auto; 
-        }
+.article-preview img {
+    width: 100%; /* Ensure the image fits the container's width */
+    height: auto; /* Allow the height to adjust dynamically */
+}
 
-        .article-preview h2 {
-            margin: 10px 0;
-            font-size: 16px;
-            font-weight: bold;
-            color: #333;
-        }
+.article-preview h2 {
+    margin: 10px 0;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
 
-        .article-preview a {
-            text-decoration: none;
-            color: inherit;
-        }
+.article-preview a {
+    text-decoration: none;
+    color: inherit;
+}
 
-        .article-preview:hover {
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); 
-            cursor: pointer;
-        }
+.article-preview:hover {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+    cursor: pointer;
+}
 
-        .article-preview a:hover img {
-            transform: scale(1.05); 
-            transition: transform 0.3s ease-in-out;
-        }
+.article-preview a:hover img {
+    transform: scale(1.05); /* Zoom effect on the image */
+    transition: transform 0.3s ease-in-out;
+}
 
-        .article-preview:hover h2 {
-            color: #0066cc; 
-        }
+.article-preview:hover h2 {
+    color: #0066cc; /* Change title color on hover */
+}
+Sent
+Write to Riya Han
+
+
+
     </style>
 </head>
 <body>
@@ -205,7 +208,7 @@
             <a href="#about">About Us</a>
             <a href="#services">Services</a>
             <a href="#contact">Contact</a>
-            <a href="Article 1.html">What?</a>
+	    <a href="Article 1.html">What?</a>
             <a href="Article 2.html">Learn More</a>
         </nav>
     </header>
@@ -255,48 +258,84 @@
             <a href="https://www.youtube.com/watch?v=A3rLfrIUzY4">Cleaning waters. A simple guide on how to preserve water.</a>
         </p>
     </div>
-
     <!-- Article preview list -->
-    <h2>Articles To Preview:</h2>
-    <div class="article-list">
-        <div class="article-row">
-            <!-- First Article -->
-            <div class="article-preview" data-article-id="1">
-                <a href="Article 1.html">
-                    <img src="hey.jpg" alt="Article 1 Image">
-                </a>
-                <h2>Causes of Water Pollution</h2>
-            </div>
-            <!-- Second Article -->
-            <div class="article-preview" data-article-id="2">
-                <a href="Article 2.html">
-                    <img src="what.jpg" alt="Article 2 Image">
-                </a>
-                <h2>Effects of Water Pollution</h2>
-            </div>
+<h2>Articles To Preview:</h2>
+<div class="article-list">
+    <div class="article-row">
+        <!-- First Article -->
+        <div class="article-preview" data-article-id="1">
+            <a href="Article 1.html">
+                <img src="hey.jpg" alt="Article 1 Image">
+            </a>
+            <h2>Causes of Water Pollution</h2>
         </div>
-
-        <div class="article-row">
-            <!-- Third Article -->
-            <div class="article-preview" data-article-id="3">
-                <a href="Article 3.html">
-                    <img src="oh.jpg" alt="Article 3 Image">
-                </a>
-                <h2>How to Avoid Water Pollution</h2>
-            </div>
-            <!-- Fourth Article -->
-            <div class="article-preview" data-article-id="4">
-                <a href="Article 4.html">
-                    <img src="bro.jpg" alt="Article 4 Image">
-                </a>
-                <h2>Save Water. Save Life.</h2>
-            </div>
+        <!-- Second Article -->
+        <div class="article-preview" data-article-id="2">
+            <a href="Article 2.html">
+                <img src="what.jpg" alt="Article 2 Image">
+            </a>
+            <h2>Effects of Water Pollution</h2>
         </div>
     </div>
-    
+
+    <div class="article-row">
+        <!-- Third Article -->
+        <div class="article-preview" data-article-id="3">
+            <a href="Article 3.html">
+                <img src="oh.jpg" alt="Article 3 Image">
+            </a>
+            <h2>How to Avoid Water Pollution</h2>
+        </div>
+        <!-- Fourth Article -->
+        <div class="article-preview" data-article-id="4">
+            <a href="Article 4.html">
+                <img src="bro.jpg" alt="Article 4 Image">
+            </a>
+            <h2>How to Solve Water Pollution</h2>
+        </div>
+    </div>
+</div>
+        
+    <!-- About -->
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Our team provides EFFICIENT and EFFECTIVE solutions on managing waste in bodies of water. We are committed to safeguarding the health of our planet's precious water resources, our team delivers efficient and effective solutions for managing waste in bodies of water, ensuring cleaner and more sustainable aquatic ecosystems for generations to come.</p>
+    </section>
+    </section>
+    </section>
+
+    <!-- Services -->
+    <section id="services">
+        <h2>Our Services</h2>
+        <ul>
+            <li>Waste Detection</li>
+            <li>Wastewater Treatment</li>
+            <li>Collecting and giving out donations</li>
+        </ul>>
+    </section>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>If you have any questions, feel free to reach out at 
+        <br><br>
+        <b>facebook/messenger:</b><a href="https://web.facebook.com/hannahmarie.caduada">facebook link</a>.
+        <br> 
+        <b>facebook/messenger:</b><a href="https://web.facebook.com/marykhryssraniella.ea">facebook link</a>.
+        <br>
+        <b>Phone Number:</b>09517914358
+        <br><br><br>
+        If you want to extend help you can send it via gcash just scan the QR code below.
+        <br><br>
+        <img src="scan.jpg" alt="GCASH QR CODE" width="300px" height="300px"></p>
+    </section>
+
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2024 Water Waste Management. All rights reserved.</p>
+        <p>Copyright © Managing Water Waste. All rights reserved.</p>
     </footer>
+
 </body>
 </html>
 
