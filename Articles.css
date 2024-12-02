@@ -1,3 +1,10 @@
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #b0c4de;
+        }
         header {
             background-color: #003366;
             color: white;
