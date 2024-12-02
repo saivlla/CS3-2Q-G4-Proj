@@ -108,3 +108,13 @@
         .article-preview:hover h2 {
             color: #0066cc;
         }
+
+         footer {
+            background-color: #003366;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
